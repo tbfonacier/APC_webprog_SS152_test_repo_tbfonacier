@@ -24,6 +24,7 @@
 					height: 50px;
 				}
 				
+				
 				#logo {
 					width: 30px;
 					height: 30px;
@@ -37,7 +38,7 @@
 					top: 5px;
 					left: 55px;
 					font-size: 22px
-					font-family: sans-serif;
+					font-family: Georgia;
 					color: white;
 					font-weight: bold;
 				}
@@ -46,50 +47,55 @@
 					position: absolute;
 
 					width: 800px;
-					height: 300px;
-					top: 50%;
+					height: 200px;
+					top: 25%;
 					margin-top -150px;
 					left: 50%;
 					margin-left: -400px;
+
 				}
 				
 				#welcome_text {
 					color: white;
-					font-family: sans-serif;
+					font-family: Georgia;
 					text-transform: uppercase;
 					font-weight: bold;
 					font-size: 55px;
 					text-align: center;
+
 				}
-				
-				#welcome_under_text {
-					color: white;
-					font-family: sans-serif;
-					text-align: center;
-					font-weight: bold;
-					margin-top -50px;
-				}
-				
 				
 				.button {
-					display: inline;
-					font-family: sans-serif;
-					font-weight: bold;
+					-webkit-border-radius: 6;
+					-moz-border-radius: 6;
+					border-radius: 6px;
+					font-family: Georgia;
+					color: #ffffff;
+					font-size: 12px;
+					padding: 6px;
+					background: #000000;
+					border: solid #ffffff 2px;
+					text-decoration: none;
 					float: right;
-					margin: 12px;
-					margin-top: 15px;
-					padding: 8px;
+					margin: 5px;
+					margin-top: 15px
 				}
-				
-				.button {
-					rgba(0, 0, 0, 0.4);
+
+				.button:hover {
+					  background: #d42020;
+					  background-image: -webkit-linear-gradient(top, #d42020, #000000);
+					  background-image: -moz-linear-gradient(top, #d42020, #000000);
+					  background-image: -ms-linear-gradient(top, #d42020, #000000);
+					  background-image: -o-linear-gradient(top, #d42020, #000000);
+					  background-image: linear-gradient(to bottom, #d42020, #000000);
+					  text-decoration: none;
 				}
 			</style>
 	</head>
 <body>
 	<div id="header">
 		<div id="nav">
-			<img src="" id="logo" />
+			<img src="eg.jpg" id="logo" />
 			<p id="logo_text">L o t s o V</p>
 			<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
 			<input type="button" class="button" value="Q&A" onclick="location.href='javascript.html'">
@@ -98,8 +104,6 @@
 		</div>
 		<div id="welcome_text_div">
 			<p id="welcome_text">Welcome Home</p>
-			<p id="welcome_under_text">Quas Wex Exort</p>
 		</div>
-	</div>
 </body>
 </html>
