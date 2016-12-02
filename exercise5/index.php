@@ -47,7 +47,7 @@ function delete_id(id)
  <div id="content">
     <table align="center">
     <tr>
-    <th colspan="5"><a href="new.php">add data here.</a></th>
+    <th colspan="5"><a href="add_data.php">add data here.</a></th>
     </tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -56,6 +56,7 @@ function delete_id(id)
     </tr>
     <?php
  $sql_query="SELECT * FROM users";
+ $result_set=mysqli_query($con, $sql_query);
  $result_set=mysqli_query($con, $sql_query);
  while($row=mysqli_fetch_row($result_set))
  {
