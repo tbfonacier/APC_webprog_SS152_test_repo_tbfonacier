@@ -6,7 +6,7 @@ if(isset($_POST['btn-save']))
  // variables for input data
  $First_name = $_POST['first_name'];
  $Last_name = $_POST['last_name'];
- $Nickname = $_POST['city_name'];
+ $Nickname = $_POST['nickname'];
  $Email = $_POST['email'];
  $Phone_number = $_POST['phone_number'];
  $Home_address = $_POST['home_address'];
@@ -15,13 +15,34 @@ if(isset($_POST['btn-save']))
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(first_name,last_name,nickname,email,phone_number,home_address,comment) VALUES('$First_name','$Last_name','$Nickname','$Email','$Phone_number,'$Home_address','$Comment')";
+        $sql_query = "INSERT INTO users(First_name,Last_name,Nickname,Email,Phone_number,Home_address,Comment) VALUES('$First_name','$Last_name','$Nickname','$Email','$Phone_number,'$Home_address','$Comment')";
  $con=mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
- 
+		// sql query execution function
+ if(mysqli_query($con,$sql_query))
+ {
+  ?>
+  <script type="text/javascript">
+  alert('Data Are Inserted Successfully ');
+  window.location.href='index.php';
+  </script>
+  <?php
+ }
+ else
+ {
+  ?>
+  <script type="text/javascript">
+  alert('error occurred');
+  </script>
+  <?php
+ }
+ // sql query execution function
 }
 ?>
+}
+?>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
