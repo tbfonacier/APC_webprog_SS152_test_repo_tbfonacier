@@ -15,7 +15,7 @@ if(isset($_POST['btn-save']))
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(first_name,last_name,nickname,email,phone_number,home_address,comment) VALUES('$first_name','$last_name','$nickname','$email','$phone_number,'$home_address','$comment')";
+        $sql_query = "INSERT INTO users(first_name,last_name,nickname,email,phone_number,home_address,comment) VALUES('$First_name','$Last_name','$Nickname','$Email','$Phone_number,'$Home_address','$Comment')";
  $con=mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -33,7 +33,7 @@ if(isset($_POST['btn-save']))
 
 <div id="header">
  <div id="content">
-    <label>TYRONE'S WORLD</label>
+    <label>asdf</label>
     </div>
 </div>
 <div id="body">
@@ -50,7 +50,19 @@ if(isset($_POST['btn-save']))
     <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    <td><input type="text" name="nickname" placeholder="Nickname" required /></td>
+    </tr>
+	    <tr>
+    <td><input type="text" name="email" placeholder="Email" required /></td>
+    </tr>
+	    <tr>
+    <td><input type="text" name="phone_number" placeholder="Phone Number" required /></td>
+    </tr>
+	    <tr>
+    <td><input type="text" name="home_address" placeholder="Home Address" required /></td>
+    </tr>
+	    <tr>
+    <td><input type="text" name="comment" placeholder="Comments" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>

@@ -18,7 +18,7 @@ if(isset($_POST['btn-update']))
  $comment = $_POST['comment'];
  // variables for input data
  // sql query for update data into database
- $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',nickname='$nickname',email='$email',phone_number='$phone_number',home_address='$home_address',comment='$comment' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
