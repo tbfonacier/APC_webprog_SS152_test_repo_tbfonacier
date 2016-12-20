@@ -65,6 +65,10 @@
 
 				}
 				
+				#table {
+					color: white;
+				}
+				
 				.button {
 					-webkit-border-radius: 6;
 					-moz-border-radius: 6;
@@ -125,6 +129,10 @@
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
+ <style>
+ th, td {
+    padding: 15px;
+	}
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>Thomas</title>
  
@@ -146,21 +154,14 @@
  
  </script>
   </head>
+  </style>
  <center>
   <body>
 
- <div id='b'> 
- <hr width="120%" size="2" color="teal">
-<a href="homepage.php" target.xml> | Home
-<a href="javascript.html" target.xml>| About Me | 
-<a href="javascript2.html" target.xml> Trivias | 
-</a>
-<hr width="120%" size="2" color="teal">
-</div>
   
  <div id="table">
   
-     <table align="bottom">
+     <table align="center">
 	 
 	 
      <tr>
@@ -170,12 +171,13 @@
      </tr>
 	
     <th>Name</th>
-     <th>Nickname</th>
+    <th>Nickname</th>
      <th>Email</th>
  	<th>Phone</th>
  	<th>Home Address</th>
  	<th>Comment</th>
  	<th>Gender</th>
+	
  	
    <th colspan="2">Operations</th>
      </tr>
