@@ -97,10 +97,10 @@
 		<div id="nav">
 			<img src="eg.jpg" id="logo" />
 			<p id="logo_text">L o t s o V</p>
-			<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
-			<input type="button" class="button" value="Q&A" onclick="location.href='javascript.php'">
-			<input type="button" class="button" value="About Me" onclick="location.href='myhomepage.html'">
-			<input type="button" class="button" value="Home" onclick="location.href='newHomepage.html'">
+				<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
+				<input type="button" class="button" value="Q&A" onclick="location.href='javascript.php'">
+				<input type="button" class="button" value="About Me" onclick="location.href='myhomepage.php'">
+				<input type="button" class="button" value="Home" onclick="location.href='newHomepage.php'">
 		</div>
 		<div id="welcome_text_div">
 			<p id="welcome_text">Welcome Home</p>
