@@ -70,10 +70,7 @@ p,h2 { color: rgb(239,233,201);
 		<div id="nav">
 			<img src="eg.jpg" id="logo" />
 			<p id="logo_text">L o t s o V</p>
-				<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
-				<input type="button" class="button" value="Q&A" onclick="location.href='javascript.php'">
-				<input type="button" class="button" value="About Me" onclick="location.href='myhomepage.php'">
-				<input type="button" class="button" value="Home" onclick="location.href='newHomepage.php'">
+				<?php include 'links.php'; ?>
 		</div>
 <center>
 <h1 id="title">WHO AM I?</h1>
