@@ -15,16 +15,6 @@
     font-size: 20px;
     display:inline-block;
 	}
-	#header
-{
- width:100%;
- height:50px;
- background:#00a2d1;
- color:#f9f9f9;
- font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
- font-size:35px;
- text-align:center;
-}
 	
 	table {
  width:80%;
@@ -198,16 +188,12 @@ table td button:active
 
 	<div id="header">
 		<div id="nav">
-
-
-			<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
-			<input type="button" class="button" value="Q&A" onclick="location.href='javascript.php'">
-			<input type="button" class="button" value="About Me" onclick="location.href='myhomepage.html'">
-			<input type="button" class="button" value="Home" onclick="location.href='newHomepage.html'">
+				<input type="button" class="button" value="Leave a Comment" onclick="location.href='new.php'">
+				<input type="button" class="button" value="Q&A" onclick="location.href='javascript.php'">
+				<input type="button" class="button" value="About Me" onclick="location.href='myhomepage.php'">
+				<input type="button" class="button" value="Home" onclick="location.href='newHomepage.php'">
 		</div>
- <div id='b'> 
-<hr width="100%" size="2" color="teal">
-</div>
+
   
  <div id="table">
   
