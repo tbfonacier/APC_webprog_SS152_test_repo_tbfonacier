@@ -26,9 +26,9 @@
  <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>add_data</title>
- <link rel="stylesheet" href="style.css" type="text/css" />
+
  </head>
- <body>
+ <body background="bg.jpg">
  <center>
  
  <div id="header">
