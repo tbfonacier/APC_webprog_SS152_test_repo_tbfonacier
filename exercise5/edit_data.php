@@ -52,9 +52,9 @@ if(isset($_POST['btn-cancel']))
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CRUD Operations With PHP and MySql - By Cleartuts</title>
-<link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
-<body>
+ <body background="bg.jpg">
 <center>
 
 <div id="header">
