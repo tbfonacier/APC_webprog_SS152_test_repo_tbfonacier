@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 
 class Users extends CI_Controller
 {
-
+    function __construct()
     {
         parent::__construct();
         $this->load->model('Users_model');
@@ -13,17 +13,17 @@ class Users extends CI_Controller
 	$this->load->library('datatables');
     }
 
-
+    public function index()
     {
         $this->load->view('users/users_list');
     } 
     
-
+    public function json() {
         header('Content-Type: application/json');
         echo $this->Users_model->json();
     }
 
-
+    public function read($id) 
     {
         $row = $this->Users_model->get_by_id($id);
         if ($row) {
@@ -44,7 +44,7 @@ class Users extends CI_Controller
         }
     }
 
-
+    public function create() 
     {
         $data = array(
             'button' => 'Create',
