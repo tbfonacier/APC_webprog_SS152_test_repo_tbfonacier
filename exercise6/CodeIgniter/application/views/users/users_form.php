@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>"/>
         <style>
             body{
-                padding: 15px;
+                padding: 20px;
             }
         </style>
     </head>
